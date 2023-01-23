@@ -1,0 +1,42 @@
+.posts-page{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.post{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post-top{
+    display: flex;
+    width: 800px;
+}
+
+.post-top h1{
+    margin-right: 10px;
+}
+
+.heart{
+    width: 10px;
+    height: 10px;
+}
+
+.post-like{
+    height: 10px;
+    width: 70px;
+    display: flex;
+}
+
+.post-like button{
+    background-color: initial;
+    border: none;
+}
+
+
+.post-like button:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
