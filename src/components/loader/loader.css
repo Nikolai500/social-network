@@ -1,0 +1,14 @@
+.loader{
+    margin: 0 auto;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 60px;
+    padding: 30px;
+}
+
+.loader h4{
+    align-items: center;
+    text-align: center;
+}

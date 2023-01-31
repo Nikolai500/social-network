@@ -4,6 +4,7 @@ import PostsPage from "./pages/postsPage";
 import SignIn from "./pages/signIn";
 import SignUp from "./pages/signUp";
 import "./App.css"
+import SinglePostPage from "./pages/singlePostPage/singlePostPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<PostsPage />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/posts/:slug" element={<SinglePostPage />} />
       </Routes>
     </div>
   );
