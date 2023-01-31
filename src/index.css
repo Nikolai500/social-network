@@ -1,4 +1,9 @@
 @font-face {
-    font-family: 'Inter-UI';
-    src: local('Inter-UI'), url(./fonts/Inter-UI-BlackItalic.otf) format('otf');
+    font-family: 'Inter-UI-Regular';
+    src: url(./fonts/Inter-UI-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Inter-UI-Bold';
+    src: url(./fonts/Inter-UI-Bold.otf);
 }

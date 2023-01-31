@@ -3,10 +3,6 @@
     margin: 20px auto;
 }
 
-p{
-    font-family: Inter-UI;
-}
-
 .post{
     background-color: #fff;
     margin-bottom: 10px;
@@ -19,6 +15,7 @@ p{
 .post-top{
     display: flex;
     width: 500px;
+    align-items: center;
 }
 
 .post-top h1{
@@ -40,6 +37,7 @@ p{
     height: 10px;
     width: 70px;
     display: flex;
+    align-items: center;
 }
 
 .post-like button{

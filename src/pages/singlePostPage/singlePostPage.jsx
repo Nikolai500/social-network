@@ -16,33 +16,40 @@ const SinglePostPage = () => {
             .then(res => res.json())
             .then(data => setPost(data.article))
     }, [])
-
-    // const date = parseISO(post.createdAt)
-    // const day = getDate(date)
-    // const month = format(date, "MMM")
-    // const year = getYear(date)
+    console.log(post);
+    const date = parseISO(post.createdAt)
+    const day = getDate(date)
+    const month = format(date, "MMM")
+    const year = getYear(date)
               
     if (post) {
       return(
-      <div className="post">
-        <div className="post-left">
-            <div className="post-top">
+        <div className="single-post-page">
+          <div className="single-post">
+        <div className="single-post-left">
+            <div className="single-post-top">
               <h1>{post.title}</h1>
-              <div className="post-like">
+              <div className="single-post-like">
                 <button><img src={Heart} alt="" className="heart" /></button>
                 <span>{post.favoritesCount}</span>
               </div>
             </div>
-            <p>{post.description}</p>
+            <p>Description: {post.description}</p>
+            <span className="tags">Tags: {post.tagList.map(tag => {
+              return tag + ", "
+            })}</span>
+            <p>{post.body}</p>
         </div>
-        <div className="post-author">
+        <div className="single-post-author">
           <div className="info">
             {post.author.username}
-          {/* <p>{month} {day} {year}</p>    */}
+            <p>{month} {day} {year}</p>
           </div>
           <img src={post.author.image} alt="" />
         </div>
       </div>
+        </div>
+      
     )} else {
       return(<Loader />)
     }
