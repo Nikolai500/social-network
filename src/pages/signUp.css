@@ -1,0 +1,33 @@
+.create-new-account{
+    width: 40%;
+    align-items: center;
+    margin: 50px auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 390px;
+    padding: 10px;
+}
+
+.create-new-account h1{
+    text-align: center;
+}
+
+.create-new-account p{
+    margin-top: 15px;
+}
+
+input{
+    width: 100%;
+    outline: none;
+}
+
+.agree{
+    margin: 10px 0px;
+}
+
+.button-crate{
+    text-align: center;
+    margin: 15px 0px;
+}

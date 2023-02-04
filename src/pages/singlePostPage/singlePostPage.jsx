@@ -22,7 +22,7 @@ const SinglePostPage = () => {
     const month = format(date, "MMM")
     const year = getYear(date)
               
-    if (post) {
+    if (post === true) {
       return(
         <div className="single-post-page">
           <div className="single-post">
@@ -34,10 +34,10 @@ const SinglePostPage = () => {
                 <span>{post.favoritesCount}</span>
               </div>
             </div>
-            <p>Description: {post.description}</p>
             <span className="tags">Tags: {post.tagList.map(tag => {
               return tag + ", "
             })}</span>
+            <p>Description: {post.description}</p>
             <p>{post.body}</p>
         </div>
         <div className="single-post-author">
